@@ -20,6 +20,10 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'],function()
 	
 	Route::get('/',['uses'=>'IndexController@view','as'=>'index']);
 
+	Route::resource('purses','PursesController');
+
+	Route::resource('incomes','IncomeController');
+
 	Route::match(['get','post'],'/addPhoto/{user_id}',['uses'=>'IndexController@addPhoto','as'=>'addPhoto']);
 		
 });

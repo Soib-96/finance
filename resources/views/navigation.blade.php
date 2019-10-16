@@ -10,9 +10,15 @@
                 <div class="sidenav-header-inner text-center">
             
                   @if(isset($user->images))
-                      <img src="/assets/img/users/{{ $user->images }}" alt="{{ $user->name }}" class="img-fluid rounded-circle">
+                    
+                      <a href="{{ route('addPhoto',['user'=>$user->id]) }}"data-toggle="tooltip" data-placement="top" title="Изменить изображение">
+                          <img src="/assets/img/users/{{ $user->images }}" alt="{{ $user->name }}" class="img-fluid rounded-circle">
+                      </a>
+
                   @else
-                      <a href="{{ route('addPhoto',['user'=>$user->id]) }}"data-toggle="tooltip" data-placement="top" title="Добавить изображение"><img src="/assets/img/users/photo_default.png" alt="{{ $user->name }}" class="img-fluid rounded-circle"></a>
+                      <a href="{{ route('addPhoto',['user'=>$user->id]) }}"data-toggle="tooltip" data-placement="top" title="Добавить изображение">
+                        <img src="/assets/img/users/photo_default.png" alt="{{ $user->name }}" class="img-fluid rounded-circle">
+                      </a>
                   @endif
                       <h2 class="h5">{{ $user->name }}</h2><span>Web Developer</span>
                 </div>
@@ -28,16 +34,16 @@
           <h5 class="sidenav-heading">Меню</h5>
           <ul id="side-main-menu" class="side-menu list-unstyled">  
             
-            <li class="active"><a href="index.html"> <i class="icon-home"></i>Главная</a></li>
+            <li class="{{ (Route::currentRouteName() == 'index') ? 'active' : '' }}"><a href="{{ route('index') }}"> <i class="icon-home"></i>Главная</a></li>
             
-            <li>
-              <a href="charts.html"> 
+            <li class="{{ (Route::currentRouteName() == 'purses.index') || (Route::currentRouteName() == 'purses.create') ? 'active' : '' }}">
+              <a href="{{ route('purses.index') }}"> 
                 <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                     Кошельки
               </a>
             </li>
             
-            <li><a href="income.html"> <i class="fa fa-bar-chart"></i>Доходы</a></li>
+            <li class="{{ (Route::currentRouteName() == 'incomes.index') || (Route::currentRouteName() == 'incomes.create') ? 'active' : '' }}"><a href="{{ route('incomes.index') }}"> <i class="fa fa-bar-chart"></i>Доходы</a></li>
             
                        <li>
               <a href="expenses.html">

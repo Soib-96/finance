@@ -7,11 +7,17 @@
 @endsection
 
 
-@section('content')	
-	
-	{!! $content !!}
+@if(isset($content))
+	@section('content')	
+		{!! $content !!}
+	@endsection
+@endif
 
-@endsection
+@if(isset($addPhoto))
+	@section('content')	
+		{!! $addPhoto !!}
+	@endsection
+@endif
 
 
 @section('footer')	

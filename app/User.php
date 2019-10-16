@@ -10,7 +10,7 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    
+
 
     public function purses(){
 
@@ -20,6 +20,16 @@ class User extends Authenticatable
     public function expenses(){
 
         return $this->hasMany('App\Expense');
+    }
+
+    public function incomes(){
+
+        return $this->hasMany('App\Income');
+    }
+
+    public function categories(){
+
+        return $this->hasMany('App\Category');
     }
 
 
