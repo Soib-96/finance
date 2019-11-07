@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ru',
 
     /*
     |--------------------------------------------------------------------------
@@ -166,6 +166,8 @@ return [
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Lavary\Menu\ServiceProvider::class,
 
+        Collective\Html\HtmlServiceProvider::class,
+
         /*
          * Package Service Providers...
          */
@@ -232,6 +234,8 @@ return [
         'App'       => Illuminate\Support\Facades\App::class,
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,
         'Menu'      => Lavary\Menu\Facade::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 

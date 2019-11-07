@@ -57,18 +57,18 @@
                       </thead>
                       <tbody>
 						
-						<?php $i=1 ?>
+						        <?php $i=1 ?>
                       	@foreach($user->incomes as $income)
                         	<tr>
                           		<th scope="row">{{ $i }}</th>
                           		<td>{{ $income->title }}</td>
                           		<td>{{ $income->purse->name }}</td>
                           		<td>Зарплата</td>
-                          		<td>{{ $income->sum }}</td>
+                          		<td>{{ $income->sum }} <i class="fa {{ $income->purse->currency }}"></td>
                           		<td>{{ $income->description }}</td>
                         	</tr>
                         <?php $i++ ?>
-						@endforeach
+						        @endforeach
 
                       </tbody>
                     </table>

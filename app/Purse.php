@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Purse extends Model
 {
-    protected $fillable = ['name','sum','currency'];
+    protected $fillable = ['name','sum'];
 
 	public function user(){
 
@@ -17,6 +17,11 @@ class Purse extends Model
     public function incomes(){
 
         return $this->hasMany('App\Income');
+    }
+
+    public function currency(){
+
+        return $this->belongsTo('App\Currency');
     }
 
 }

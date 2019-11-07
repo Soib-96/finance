@@ -7,14 +7,17 @@
           
           @if(count($user->purses) > 0)
             @foreach($user->purses as $purse)
-            <div class="col-xl-2 col-md-4 col-6">
+
+            <div class="col-xl-3 col-md-4 col-6" style="margin-bottom: 15px;">
               <div class="wrapper count-title d-flex">
                 <div class="icon"><i class="fa fa-credit-card-alt"></i></div>
                 <div class="name"><strong class="text-uppercase" style=""><b>{{ $purse->name }}</b></strong><span>Создан: {{ $purse->created_at->format('d-m-y') }}</span>
-                  <h3 class="display-4">{{ $purse->sum.$purse->currency }}<h3>
+                  <h3>{{ $purse->sum }} <i class="fa {{ $purse->currency->icon }}" aria-hidden="true"></i><h3>
                 </div>
               </div>
             </div>
+            
+
             @endforeach
 
           @else
