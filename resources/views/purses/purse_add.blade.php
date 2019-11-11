@@ -68,7 +68,7 @@
                     
                   <div class="form-group">
                       <button type="submit" class="btn btn-secondary">Отменит</button>       
-                      <input type="submit" value="Добавить" class="btn btn-primary">
+                      <input type="submit" value="Сохранить" class="btn btn-primary">
                   </div>
               </form>
           </div>

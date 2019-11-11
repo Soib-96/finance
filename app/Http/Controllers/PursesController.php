@@ -146,6 +146,7 @@ class PursesController extends MainController
         $purse = $this->getPurseForUpdate($id);
 
         $purse->incomes()->delete();
+        $purse->expenses()->delete();
 
         if ($purse->delete())
         {

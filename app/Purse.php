@@ -19,6 +19,12 @@ class Purse extends Model
         return $this->hasMany('App\Income');
     }
 
+    public function expenses(){
+
+        return $this->hasMany('App\Expense');
+    }
+
+
     public function currency(){
 
         return $this->belongsTo('App\Currency');
