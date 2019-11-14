@@ -45,8 +45,8 @@
             
             <li class="{{ (Route::currentRouteName() == 'incomes.index') || (Route::currentRouteName() == 'incomes.create') ? 'active' : '' }}"><a href="{{ route('incomes.index') }}"> <i class="fa fa-bar-chart"></i>Доходы</a></li>
             
-                       <li>
-              <a href="expenses.html">
+            <li class="{{ (Route::currentRouteName() == 'expenses.index') || (Route::currentRouteName() == 'expenses.create') ? 'active' : '' }}">
+              <a href="{{ route('expenses.index') }}">
                   <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
                     Расходы
               </a>

@@ -24,6 +24,8 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'],function()
 
 	Route::resource('incomes','IncomeController');
 
+	Route::resource('expenses','ExpensesController');
+
 	Route::match(['get','post'],'/addPhoto/{user_id}',['uses'=>'IndexController@addPhoto','as'=>'addPhoto']);
 		
 });

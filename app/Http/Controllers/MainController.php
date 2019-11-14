@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Menu;
+use App\Purse;
 
 class MainController extends Controller
 {
-    
+
     protected $title;
     protected $content;
     protected $user;
@@ -19,7 +20,7 @@ class MainController extends Controller
 
     protected $contentLeftBar=FALSE;
 
-    
+
     public function __construct()
     {
 
@@ -47,7 +48,7 @@ class MainController extends Controller
         }
 
         if ($this->content) {
-        	
+
         	$content = $this->content;
         	$this->vars = array_add($this->vars,'content',$this->content);
         }
@@ -57,6 +58,21 @@ class MainController extends Controller
 
         return view($this->template)->with($this->vars);
 
+    }
+
+    public function getPurse($id)
+    {
+        $purse = Purse::find($id);
+        return $purse;
+    }
+
+    // assignment value to foreign keys income table
+    public function assigment($income,$user,$data)
+    {
+        $income->user_id = $user;
+        $income->category_id = $data['category_id'];
+        $income->purse_id = $data['purse_id'];
+        return $income;
     }
 
     public function getMenu()

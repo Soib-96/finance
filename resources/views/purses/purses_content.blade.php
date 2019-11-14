@@ -25,7 +25,7 @@
                         {!! session('status') !!} 
                     </div>
                 </div>
-           @endif
+            @endif
 
            @if(count($user->purses) > 0)
               @foreach($user->purses as $purse)

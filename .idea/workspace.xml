@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="064218df-3020-47e4-b56b-cd82875423e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Expense.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Expense.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IncomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IncomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PursesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PursesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Purse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Purse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ru/ru.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru/ru.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/incomes/income_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incomes/income_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/incomes/income_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incomes/income_content.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/purses/purse_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/purses/purse_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/purses/purses_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/purses/purses_content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,6 +168,10 @@
       <workItem from="1573236595934" duration="5677000" />
       <workItem from="1573284703437" duration="3049000" />
       <workItem from="1573461985616" duration="10000000" />
+      <workItem from="1573566424985" duration="24000" />
+      <workItem from="1573584838726" duration="2677000" />
+      <workItem from="1573668959785" duration="5151000" />
+      <workItem from="1573744898065" duration="367000" />
     </task>
     <servers />
   </component>

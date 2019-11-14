@@ -73,12 +73,6 @@ class IncomeController extends MainController
 
     }
 
-    // get purse
-    public  function getPurse($id)
-    {
-        $purse = Purse::find($id);
-        return $purse;
-    }
 
     // adding income sum in purse
     protected function addSum($sum,$purseSum)
@@ -87,14 +81,7 @@ class IncomeController extends MainController
         return $purseSum;
     }
 
-    // assignment value to foreign keys income table
-    protected function assigment($income,$user,$data)
-    {
-        $income->user_id = $user;
-        $income->category_id = $data['category_id'];
-        $income->purse_id = $data['purse_id'];
-        return $income;
-    }
+
 
     // show income
     public function show($id)
