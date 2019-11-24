@@ -28,6 +28,8 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'],function()
 
     Route::resource('debts','DebtsController');
 
+    Route::resource('categories','CategoriesController');
+
 	Route::match(['get','post'],'/addPhoto/{user_id}',['uses'=>'IndexController@addPhoto','as'=>'addPhoto']);
 
 });

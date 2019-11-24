@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="064218df-3020-47e4-b56b-cd82875423e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ru/ru.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru/ru.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/expenses/expense_view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/expenses/expense_view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/expenses/expense_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/expenses/expense_content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/incomes/income_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incomes/income_content.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -173,6 +172,7 @@
       <workItem from="1573835779716" duration="297000" />
       <workItem from="1574075220112" duration="63000" />
       <workItem from="1574253552720" duration="5806000" />
+      <workItem from="1574610437125" duration="5863000" />
     </task>
     <servers />
   </component>

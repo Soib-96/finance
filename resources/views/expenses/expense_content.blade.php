@@ -5,7 +5,7 @@
           <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
             <li class="breadcrumb-item active">Расходы</li>
-            <li style="margin-left: 78%;"><a href="" class="btn btn-primary">Категории</a></li>
+            <li style="margin-left: 78%;"><a href="{{ route('categories.index') }}" class="btn btn-primary">Категории</a></li>
           </ul>
         </div>
       </div>
