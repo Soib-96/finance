@@ -17,7 +17,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => '/', 'middleware' => 'auth'],function()
 {
-	
+
 	Route::get('/',['uses'=>'IndexController@view','as'=>'index']);
 
 	Route::resource('purses','PursesController');
@@ -26,6 +26,8 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'],function()
 
 	Route::resource('expenses','ExpensesController');
 
+    Route::resource('debts','DebtsController');
+
 	Route::match(['get','post'],'/addPhoto/{user_id}',['uses'=>'IndexController@addPhoto','as'=>'addPhoto']);
-		
+
 });

@@ -52,8 +52,8 @@
               </a>
             </li>
             
-            <li>
-              <a href="arrears.html"><i class="fa fa-tasks" aria-hidden="true"></i>
+            <li  class="{{ (Route::currentRouteName() == 'debts.index') || (Route::currentRouteName() == 'debts.create') ? 'active' : '' }}">
+              <a href="{{ route('debts.index') }}"><i class="fa fa-tasks" aria-hidden="true"></i>
                   Дольги
               </a>
             </li>

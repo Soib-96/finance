@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="064218df-3020-47e4-b56b-cd82875423e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Expense.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Expense.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IncomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IncomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ru/ru.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru/ru.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/expenses/expense_view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/expenses/expense_view.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/purses/purses_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/purses/purses_content.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -171,7 +169,10 @@
       <workItem from="1573566424985" duration="24000" />
       <workItem from="1573584838726" duration="2677000" />
       <workItem from="1573668959785" duration="5151000" />
-      <workItem from="1573744898065" duration="367000" />
+      <workItem from="1573744898065" duration="3806000" />
+      <workItem from="1573835779716" duration="297000" />
+      <workItem from="1574075220112" duration="63000" />
+      <workItem from="1574253552720" duration="5806000" />
     </task>
     <servers />
   </component>
