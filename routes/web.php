@@ -30,6 +30,13 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'],function()
 
     Route::resource('categories','CategoriesController');
 
+    Route::resource('categories','CategoriesController');
+
+    Route::match(['get','post'],'/user/{user_id}',['uses'=>'UserController@index','as'=>'user']);
+
+
+    Route::delete('user/{user_id}',['uses'=>'UserController@destroy','as'=>'deleteUser']);
+
 	Route::match(['get','post'],'/addPhoto/{user_id}',['uses'=>'IndexController@addPhoto','as'=>'addPhoto']);
 
 });

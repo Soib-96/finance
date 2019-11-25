@@ -82,7 +82,7 @@
                                               </td>
 
                           		                <td>{{ $income->purse->name }}</td>
-                          		                <td>{{ $income->category->name }}</td>
+                          		                <td>{{ isset($income->category->name) ? $income->category->name : 'Без категории' }}</td>
                           		                <td>
                                                 {{ $income->sum }} <i class="fa {{ $income->purse->currency }}">
                                               </td>

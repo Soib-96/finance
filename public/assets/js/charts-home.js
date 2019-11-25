@@ -75,18 +75,25 @@ $(document).ready(function () {
     // ------------------------------------------------------- //
     // Pie Chart
     // ------------------------------------------------------ //
+
+    
+   
     var PIECHART = $('#pieChart');
+    var incomes = $("input[name='incomes']").val();
+    var expenses = $("input[name='expenses']").val();
+    var debts = $("input[name='debts']").val();
+
     var myPieChart = new Chart(PIECHART, {
         type: 'doughnut',
         data: {
             labels: [
                 "Доходы",
                 "Расходы",
-                "Дольги"
+                "Долги"
             ],
             datasets: [
                 {
-                    data: [300, 50, 100],
+                    data: [incomes, expenses, debts],
                     borderWidth: [1, 1, 1],
                     backgroundColor: [
                         brandPrimary,

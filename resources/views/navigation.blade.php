@@ -20,7 +20,7 @@
                         <img src="/assets/img/users/photo_default.png" alt="{{ $user->name }}" class="img-fluid rounded-circle">
                       </a>
                   @endif
-                      <h2 class="h5">{{ $user->name }}</h2><span>Web Developer</span>
+                      <h2 class="h5">{{ $user->name }}</h2><span>{{ $user->email }}</span>
                 </div>
                 
                 <!-- Small Brand information, appears on minimized sidebar-->
@@ -54,15 +54,15 @@
             
             <li  class="{{ (Route::currentRouteName() == 'debts.index') || (Route::currentRouteName() == 'debts.create') ? 'active' : '' }}">
               <a href="{{ route('debts.index') }}"><i class="fa fa-tasks" aria-hidden="true"></i>
-                  Дольги
+                  Долги
               </a>
             </li>
             
-            <li><a href="tables.html"> <i class="icon-grid"></i>Переводы</a></li>
+            <!-- <li><a href="tables.html"> <i class="icon-grid"></i>Переводы</a></li> -->
             
             <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Личные данные</a>
               <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                <li><a href="change.html">Изменить</a></li>
+                <li><a href="{{ route('user',['user_id'=>$user->id]) }}">Изменить</a></li>
                 <li><a href="login.html">Выйти</a></li>
               </ul>
             </li>

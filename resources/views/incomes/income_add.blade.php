@@ -39,12 +39,11 @@
                         <div class="form-group">
                             <label>Выберите категорию</label>
                             <select name="category_id" id="" class="form-control">
-                                @if(isset($income->id))
-                                    <option value="{{ $income->category->id }}">
-                                        {{ $income->category->name }}
-                                    </option>
-                                @endif
-                        
+                                                            
+                            <option value="{{ isset($income->category->id) ? $income->category->id : '' }}">
+                                {{ isset($income->category->name) ? $income->category->name : '' }}
+                            </option>
+                            
                                 @foreach($user->categories as $category)
                                     @if($category->status == 1)
                       	                 <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -52,6 +51,13 @@
                                 @endforeach
                             </select>
                         </div>
+                        @else
+                        
+                        <select name="category_id" id="" class="form-control">
+                             <label>Выберите категорию</label>
+                             <option value="">Без категории</option>
+                        </select>
+
                         @endif
 
                         @if(count($user->purses) > 0)

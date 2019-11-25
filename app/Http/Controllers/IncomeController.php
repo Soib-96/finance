@@ -55,7 +55,7 @@ class IncomeController extends MainController
         $purseSum = $this->getPurse($data['purse_id']);
         $incomeSum = $data['sum'];
 
-
+    
         $purseSum['sum'] = $this->addSum($incomeSum,$purseSum->sum);
         $purseSum->update();
 

@@ -70,7 +70,15 @@ class MainController extends Controller
     public function assigment($income,$user,$data)
     {
         $income->user_id = $user;
-        $income->category_id = $data['category_id'];
+
+        if (isset($data['category_id']))
+        {
+            $income->category_id = $data['category_id'];
+        }else
+        {
+            $income->category_id = NULL;
+        }
+
         $income->purse_id = $data['purse_id'];
         return $income;
     }

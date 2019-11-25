@@ -41,11 +41,9 @@
                         <div class="form-group">
                             <label>Выберите категорию</label>
                             <select name="category_id" id="" class="form-control">
-                                @if(isset($expense->id))
-                                    <option value="{{ $expense->category->id }}">
-                                        {{ $expense->category->name }}
-                                    </option>
-                                @endif
+                                 <option value="{{ isset($expense->category->id) ? $expense->category->id : '' }}">
+                                {{ isset($income->category->name) ? $income->category->name : '' }}
+                            </option>
                         
                                 @foreach($user->categories as $category)
                                     @if($category->status == 2)

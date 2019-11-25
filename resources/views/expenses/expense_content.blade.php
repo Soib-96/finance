@@ -71,7 +71,7 @@
                           	<a href="{{ route('expenses.edit',['expense'=>$expense->id]) }}">{{ $expense->title }}</a>
                           </td>
                           <td>{{ $expense->purse->name }}</td>
-                          <td>{{ $expense->category->name }}</td>
+                          <td>{{ isset($expense->category->name) ? $expense->category->name : 'Без категории' }}</td>
                           <td>{{ $expense->sum }}</td>
                           <td>{{ $expense->description }}</td>
                           <td>{{ $expense->created_at->format('d-m-Y') }}</td>
